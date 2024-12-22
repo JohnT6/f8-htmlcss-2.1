@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    line-height: 68px;
+    padding: 0 16px;
+    border-radius: 14px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.heading {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+}
+
+/* Header */
+.head {
+    background: #fff;
+}
+
+.head.fixed {
+    position: sticky;
+    top: -44px;
+    z-index: 1;
+}
+
+.head .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px 0 8px;
+}
+
+.head .body a.logo {
+    display: flex;
+    align-items: center;
+}
+
+.head .navbar ul {
+    display: flex;
+}
+
+.head .navbar ul li a {
+    color: #2f3a3b;
+    padding: 8px 19.5px;
+    text-decoration: none;
+}
+
+.head .navbar ul li a:hover,
+.head .navbar ul li.active a {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.head .action .sign-in {
+    color: #494949;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.head .action .sign-in:hover {
+    text-decoration: underline;
+}
+
+.head .action .head-cta {
+    min-width: 108px;
+    line-height: 48px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+}
+
+.head .action .head-cta:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 50px 0 79px 0;
+}
+
+.hero .body {
+    display: flex;
+}
+
+/* Hero Left */
+.hero-content {
+    width: 51%;
+    padding: 93px 136px 0 0;
+}
+
+.hero-content .head-content {
+    color: #767e7e;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.hero-content .desc {
+    color: #9da6a5;
+    width: 374px;
+    font-size: 1.8rem;
+    line-height: 1.78; /* 177.778% */
+    margin-top: 46px;
+}
+
+.hero-content .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero-content .cta-group .hero-cta {
+    margin-right: 50px;
+}
+
+.hero-content .cta-group .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+.hero-content .cta-group .play:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Right */
+.hero .media-block {
+    width: 49%;
+    position: relative;
+}
+
+.media-block .hero-img {
+    display: block;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+/* Hero sumary 1 */
+.hero-sumary {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    padding: 17px 25px 18px;
+}
+
+.hero-sumary .row-sumary {
+    display: flex;
+    align-items: center;
+}
+
+.hero-sumary .row-sumary .Book {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 5px 2px 2px 5px;
+}
+
+.hero-sumary .row-sumary .Book::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    left: 4px;
+    bottom: 8px;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+}
+
+.hero-sumary .row-sumary .title {
+    width: 55px;
+    margin-left: 16px;
+    color: #0d1111;
+    font-size: 1rem;
+    line-height: normal;
+    font-weight: 500;
+}
+
+/* Hero sumary 2 */
+.hero-sumary-2 {
+    position: absolute;
+    bottom: 46px;
+    left: -65px;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 25px 23px;
+}
+
+.hero-sumary-2 .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.hero-sumary-2 .Progress-bar {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 6px;
+    margin-top: 16px;
+    border-radius: 3px;
+    background: #fb9899;
+}
+
+.hero-sumary-2 .Progress-bar::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 51px;
+    height: 6px;
+    bottom: -18px;
+    border-radius: 3px;
+    margin-top: 12px;
+    background: #fb9899;
+}
+
+.hero-sumary-2 .Progress-bar::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 33px;
+    height: 6px;
+    bottom: -36px;
+    border-radius: 3px;
+    margin-top: 12px;
+    background: #fb9899;
+}
+
+.hero-sumary-2 .Rectangle {
+    display: block;
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: #edf1f5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+}
+
+/* Hero sumary 3 */
+.hero-sumary-3 {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    padding: 17px 35px;
+}
+
+.hero-sumary-3 .title {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-sumary-3 .image {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.hero-sumary-3 .avatar {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -7px;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 33px;
+    background-color: var(--bg-color, #1ebfc1);
+}
+
+.hero-sumary-3 .avatar:first-child {
+    margin-left: 0;
+}
