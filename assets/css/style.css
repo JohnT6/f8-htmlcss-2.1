@@ -111,6 +111,7 @@ body {
     min-width: 108px;
     line-height: 48px;
     border-radius: 6px;
+    font-size: 1.6rem;
     border: 1px solid var(--primary-color);
     background: none;
     color: var(--primary-color);
@@ -387,7 +388,8 @@ body {
 
 .features .row .desc {
     color: #9da6a5;
-    width: 247px;
+    width: 223px;
+    font-size: 1.6rem;
     line-height: 1.69; /* 168.75% */
 }
 
